@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gallery | Rolling Thunder Grappling</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark rtg-navbar fixed-top">
+    <div class="container">
+      <a class="navbar-brand rtg-brand" href="index.html">
+        <span class="d-block brand-main">ROLLING THUNDER</span>
+        <span class="d-block brand-sub">GRAPPLING</span>
+      </a>
+      <button class="navbar-toggler" type="button"
+        data-bs-toggle="collapse" data-bs-target="#mainNav"
+        aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="classes.html">Classes</a></li>
+          <li class="nav-item"><a class="nav-link" href="instructors.html">Instructors</a></li>
+          <li class="nav-item"><a class="nav-link active" href="gallery.html">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="events.html">Events</a></li>
+          <li class="nav-item"><a class="nav-link rtg-nav-cta ms-lg-2" href="contact.html">Join Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- PAGE HERO -->
+  <section class="rtg-page-hero">
+    <div class="container">
+      <span class="rtg-badge d-inline-block mb-3">Life on the Mat</span>
+      <h1 class="rtg-hero-heading">The <span class="rtg-red">Gallery</span></h1>
+      <p class="rtg-hero-sub">Training sessions, competition trips, and club life — captured</p>
+    </div>
+  </section>
+
+
+  <!-- GALLERY GRID -->
+  <section class="rtg-section">
+    <div class="container">
+
+      <!-- Filter Tabs -->
+      <div class="rtg-filter-tabs">
+        <button class="rtg-filter-btn active" data-filter="all">All</button>
+        <button class="rtg-filter-btn" data-filter="training">Training</button>
+        <button class="rtg-filter-btn" data-filter="competition">Competition</button>
+        <button class="rtg-filter-btn" data-filter="events">Events</button>
+      </div>
+
+      <!-- Photo Grid -->
+      <div class="row g-3" id="galleryGrid">
+
+        <!-- Training -->
+        <div class="col-6 col-md-4 col-lg-3 gallery-item" data-category="training">
+          <div class="rtg-gallery-item">
+            <img src="images/lesedi_guard_pass.jpeg" alt="Drilling technique" width="400" height="300" class="img-fluid"
+              onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" />
+            <div class="rtg-img-fallback"><i class="bi bi-image fs-3"></i></div>
+            <div class="rtg-gallery-overlay"><span>Drilling</span></div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-3 gallery-item" data-category="training">
+          <div class="rtg-gallery-item">
+            <img src="images/les_kim.jpeg" alt="Sparring session" width="400" height="300" class="img-fluid"
+              onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" />
+            <div class="rtg-img-fallback"><i class="bi bi-image fs-3"></i></div>
+            <div class="rtg-gallery-overlay"><span>Sparring</span></div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-3 gallery-item" data-category="training">
+          <div class="rtg-gallery-item">
+            <img src="images/training_with_pcoach.jpeg" alt="Technique class" width="400" height="300" class="img-fluid"
+              onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" />
+            <div class="rtg-img-fallback"><i class="bi bi-image fs-3"></i></div>
+            <div class="rtg-gallery-overlay"><span>Technique</span></div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-3 gallery-item" data-category="training">
+          <div class="rtg-gallery-item">
+            <img src="images/sparing.jpeg" alt="Open mat session" width="400" height="300" class="img-fluid"
+              onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" />
+            <div class="rtg-img-fallback"><i class="bi bi-image fs-3"></i></div>
+            <div class="rtg-gallery-overlay"><span>Open Mat</span></div>
+          </div>
+        </div>
+
+        <!-- Competition -->
+        <div class="col-6 col-md-4 col-lg-3 gallery-item" data-category="competition">
+          <div class="rtg-gallery-item">
+            <img src="images/sa_open.jpeg" alt="SA Open competition" width="400" height="300" class="img-fluid"
+              onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" />
+            <div class="rtg-img-fallback"><i class="bi bi-image fs-3"></i></div>
+            <div class="rtg-gallery-overlay"><span>SA Open</span></div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-3 gallery-item" data-category="competition">
+          <div class="rtg-gallery-item">
+            <img src="images/medals_section.jpeg" alt="Medal ceremony" width="400" height="300" class="img-fluid"
+              onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" />
+            <div class="rtg-img-fallback"><i class="bi bi-image fs-3"></i></div>
+            <div class="rtg-gallery-overlay"><span>Medals</span></div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-3 gallery-item" data-category="competition">
+          <div class="rtg-gallery-item">
+            <img src="images/match.jpeg" alt="Competition match" width="400" height="300" class="img-fluid"
+              onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" />
+            <div class="rtg-img-fallback"><i class="bi bi-image fs-3"></i></div>
+            <div class="rtg-gallery-overlay"><span>Match</span></div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-3 gallery-item" data-category="competition">
+          <div class="rtg-gallery-item">
+            <img src="images/tournament_group.jpeg" alt="Team photo South Africa" width="400" height="300" class="img-fluid"
+              onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" />
+            <div class="rtg-img-fallback"><i class="bi bi-image fs-3"></i></div>
+            <div class="rtg-gallery-overlay"><span>Team</span></div>
+          </div>
+        </div>
+
+        <!-- Events -->
+        <div class="col-6 col-md-4 col-lg-3 gallery-item" data-category="events">
+          <div class="rtg-gallery-item">
+            <img src="images/seminar.jpeg" alt="Guest seminar" width="400" height="300" class="img-fluid"
+              onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" />
+            <div class="rtg-img-fallback"><i class="bi bi-image fs-3"></i></div>
+            <div class="rtg-gallery-overlay"><span>Seminar</span></div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-3 gallery-item" data-category="events">
+          <div class="rtg-gallery-item">
+            <img src="images/promotion.jpeg" alt="Belt promotion ceremony" width="400" height="300" class="img-fluid"
+              onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" />
+            <div class="rtg-img-fallback"><i class="bi bi-image fs-3"></i></div>
+            <div class="rtg-gallery-overlay"><span>Promotions</span></div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-3 gallery-item" data-category="events">
+          <div class="rtg-gallery-item">
+            <img src="images/club_social.jpeg" alt="Club social event" width="400" height="300" class="img-fluid"
+              onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" />
+            <div class="rtg-img-fallback"><i class="bi bi-image fs-3"></i></div>
+            <div class="rtg-gallery-overlay"><span>Club Social</span></div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-3 gallery-item" data-category="events">
+          <div class="rtg-gallery-item">
+            <img src="images/team2.jpeg" alt="Interclub tournament" width="400" height="300" class="img-fluid"
+              onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" />
+            <div class="rtg-img-fallback"><i class="bi bi-image fs-3"></i></div>
+            <div class="rtg-gallery-overlay"><span>Interclub</span></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- CTA BAND -->
+  <section class="rtg-cta-band text-center">
+    <div class="container">
+      <h2 class="rtg-section-heading">Your Photo Could Be Here</h2>
+      <p class="rtg-muted mx-auto mb-4">Join the club and become part of Botswana's grappling story.</p>
+      <a href="contact.html" class="btn rtg-btn-primary btn-lg">Get Started <i class="bi bi-arrow-right ms-1"></i></a>
+    </div>
+  </section>
+
+
+  <!-- FOOTER -->
+  <footer class="rtg-footer">
+    <div class="container">
+      <div class="row g-4">
+
+        <div class="col-md-4">
+          <div class="rtg-brand mb-3">
+            <span class="d-block brand-main">ROLLING THUNDER</span>
+            <span class="d-block brand-sub">GRAPPLING</span>
+          </div>
+          <p class="rtg-muted small">Botswana's only BJJ and grappling club. Based in Gaborone.</p>
+        </div>
+
+        <div class="col-md-4">
+          <h5 class="rtg-footer-heading">Quick Links</h5>
+          <ul class="rtg-footer-links">
+            <li><a href="about.html">About</a></li>
+            <li><a href="classes.html">Classes &amp; Schedule</a></li>
+            <li><a href="instructors.html">Instructors</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="events.html">Competition &amp; Events</a></li>
+            <li><a href="contact.html">Contact &amp; Join Us</a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-4">
+          <h5 class="rtg-footer-heading">Contact</h5>
+          <p class="rtg-muted small"><i class="bi bi-geo-alt rtg-red me-2"></i>Gaborone, Botswana</p>
+          <p class="rtg-muted small"><i class="bi bi-envelope rtg-red me-2"></i>info@rollingthunder.bw</p>
+          <div class="d-flex gap-2 mt-3">
+            <a href="#" class="rtg-social-btn" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="rtg-social-btn" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="rtg-social-btn" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+          </div>
+        </div>
+
+      </div>
+      <div class="rtg-footer-bottom mt-4 pt-3 text-center">
+        <p class="small mb-0">&copy; 2026 Rolling Thunder Grappling. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // Gallery filter — toggles Bootstrap d-none on grid items
+    document.querySelectorAll('.rtg-filter-btn').forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        document.querySelectorAll('.rtg-filter-btn').forEach(function(b) { b.classList.remove('active'); });
+        this.classList.add('active');
+        var filter = this.getAttribute('data-filter');
+        document.querySelectorAll('.gallery-item').forEach(function(item) {
+          if (filter === 'all' || item.getAttribute('data-category') === filter) {
+            item.classList.remove('d-none');
+          } else {
+            item.classList.add('d-none');
+          }
+        });
+      });
+    });
+  </script>
+</body>
+</html>
